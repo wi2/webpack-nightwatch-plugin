@@ -29,5 +29,9 @@
   "dependencies": {
     "child_process": "^1.0.2",
     "nightwatch": "^0.9.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wi2/webpack-nightwatch-plugin.git"
   }
 }
