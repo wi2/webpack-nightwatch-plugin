@@ -1,8 +1,8 @@
 
-#### webpack-nightwatch-plugin
+## webpack-nightwatch-plugin
 
 
-## NightWatch config
+#### NightWatch config
 ```
 //test/nightwatch.conf.js
 
@@ -47,7 +47,7 @@ module.exports = {
 };
 ```
 
-## Webpack config
+#### Webpack config
 ```
 //webpack.config.js
 
