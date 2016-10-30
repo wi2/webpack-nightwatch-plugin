@@ -1,0 +1,33 @@
+{
+  "name": "webpack-nightwatch-plugin",
+  "version": "1.0.0",
+  "description": "Webpack plugin, Browser Automation with Nightwatch.js",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run build && ava -v test/*.spec.js",
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "Nightwatch"
+  ],
+  "author": "Mike wi2",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "chromedriver": "^2.24.1",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-json": "^2.0.2",
+    "selenium-server-standalone-jar": "^3.0.1",
+    "webpack": "^1.13.3"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "nightwatch": "^0.9.8"
+  }
+}
