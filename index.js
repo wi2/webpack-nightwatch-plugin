@@ -1,5 +1,5 @@
 import path from 'path'
-import {spawn, spawnSync} from 'child_process'
+import {exec, spawnSync} from 'child_process'
 
 export default class WebpackNightWatchPlugin {
 
@@ -18,7 +18,7 @@ export default class WebpackNightWatchPlugin {
 
     compiler.plugin(this.options.onEmit ? 'emit' : 'done', (compilation, callback) => {
       const env = Object.assign({}, process.env, {LANG: 'en_US.UTF-8'})
-      const nightwatch = spawn(path.join(__dirname, '../node_modules/.bin/nightwatch'), [
+      const nightwatch = exec(path.join(__dirname, '../node_modules/.bin/nightwatch'), [
         '-c',
         this.options.url
       ], {env})
